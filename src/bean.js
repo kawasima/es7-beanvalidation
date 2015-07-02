@@ -194,6 +194,11 @@ class Validator {
         };
     }
 
+    Valid(annotation) {
+        return (target, name, descriptor) => {
+        };
+    }
+
     Domain(value) {
         return function(target, name, descriptor) {
             //descriptor._validateSpec[name] = value;
